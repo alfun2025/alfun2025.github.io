@@ -31,13 +31,17 @@
             background-color: #C4C4FF;
             border-radius: 8px;
             padding: 20px;     
-            box-shadow: 0 2px 20px rgba(255, 255, 255, 0.5);                   
+            box-shadow: 0 4px 25px rgba(255, 255, 255, 0.5);  
+            border: 7.5px outset black;    
+            margin-bottom: 50px;                                     
         }
+
         h1,h2 {
             font-family: 'Inria Sans';
         }
         .container {
             background-color: #C4C4FF;
+                        border: 7.5px outset black; 
             border-radius: 8px;
             padding: 20px;
             box-shadow: 0 2px 20px rgba(255, 255, 255, 0.5);
@@ -51,6 +55,7 @@
 
         .container2 {
             background-color: #C4C4FF;
+
             width: 85%;
 
         }        
@@ -102,6 +107,12 @@
         
         .arrow.open {
           transform: rotate(180deg);
+        }
+
+
+        .rotated-image {
+          -webkit-transform: rotate(180deg);
+                  transform: rotate(180deg);
         }
 
 
@@ -160,7 +171,7 @@
             <article>
                 <div class='titulo'id='toggle-titulo3'>           
                     <h3>Comunicación no-ideal</h3>
-                    <h3 class="arrow3">▼</h3>
+                    <h3 class="arrow" id="arrow3">▼</h3>
                 </div>
                 <div class="contenido" id="toggle-contenido3">
                 <p>Slurs have provided an interesting challenge to truth/informational/update semantic frameworks. Their political misbehaviour is matched by their resistance to fall cleanly into the semantics and pragmatic categories we spent the 20th and beginning of the 21st centuries developing. They misbehave so badly that it’s difficult even to tell how to characterize the data that needs to be explained (offensiveness? Derogatory content? Some mix of the two). We’ll look at attempts to characterize the category of slur term or pejorative and learn about the categories that theorists have attempted to squeeze slurs into.</p>
@@ -171,7 +182,7 @@
             <article>
                 <div class='titulo'id='toggle-titulo4'>           
                     <h3>Filosofía del lenguaje y psicosemántica</h3>
-                    <h3 class="arrow4">▼</h3>
+                    <h3 class="arrow" id="arrow4">▼</h3>
                 </div>
                 <div class="contenido" id="toggle-contenido4">
                 <p>The best philosophy makes contact with the best available science. This course introduces philosophy students to the study of language as it is pursued by linguists and their allies. In the first session, the central questions and ideas of generative linguistics – the science of language – are introduced. This lecture is framed around three fundamental questions: What is knowledge of language? How is it acquired? And what use is it? We suppose, along with Noam Chomsky, that the evidence from language design suggests optimization for thought, rather than communication. The second session, then, explores the interface between language and conceptualization drawing on representational tools from formal semantics. If time, this session will both (i) introduce cutting-edge results in the psychology of meaning and (ii) present an opinionated guide to theorizing about the Language of Thought.</p>
@@ -182,7 +193,7 @@
             <article>
                 <div class='titulo'id='toggle-titulo5'>           
                     <h3>Erika</h3>
-                    <h3 class="arrow5">▼</h3>
+                    <h3 class="arrow" id="arrow5">▼</h3>
                 </div>
                 <div class="contenido" id="toggle-contenido5">
                 <p>The best philosophy makes contact with the best available science. This course introduces philosophy students to the study of language as it is pursued by linguists and their allies. In the first session, the central questions and ideas of generative linguistics – the science of language – are introduced. This lecture is framed around three fundamental questions: What is knowledge of language? How is it acquired? And what use is it? We suppose, along with Noam Chomsky, that the evidence from language design suggests optimization for thought, rather than communication. The second session, then, explores the interface between language and conceptualization drawing on representational tools from formal semantics. If time, this session will both (i) introduce cutting-edge results in the psychology of meaning and (ii) present an opinionated guide to theorizing about the Language of Thought.</p>
@@ -257,7 +268,8 @@
 
     const header2 = document.getElementById('toggle-titulo2');
     const content2 = document.getElementById('toggle-contenido2');
-    const arrow2 = document.getElementById('.arrow2');    
+    const arrow2 = document.getElementById('arrow2');    
+
 
     header2.addEventListener('click', () => {
       content2.classList.toggle('open');
@@ -266,7 +278,7 @@
 
     const header3 = document.getElementById('toggle-titulo3');
     const content3 = document.getElementById('toggle-contenido3');
-    const arrow3 = document.getElementById('.arrow3');    
+    const arrow3 = document.getElementById('arrow3');    
 
     header3.addEventListener('click', () => {
       content3.classList.toggle('open');
@@ -275,7 +287,7 @@
 
     const header4 = document.getElementById('toggle-titulo4');
     const content4 = document.getElementById('toggle-contenido4');
-    const arrow4 = document.querySelector('.arrow4');    
+    const arrow4 = document.getElementById('arrow4');    
 
     header4.addEventListener('click', () => {
       content4.classList.toggle('open');
@@ -284,7 +296,7 @@
 
     const header5 = document.getElementById('toggle-titulo5');
     const content5 = document.getElementById('toggle-contenido5');
-    const arrow5 = document.querySelector('.arrow5');    
+    const arrow5 = document.getElementById('arrow5');    
 
     header5.addEventListener('click', () => {
       content5.classList.toggle('open');
@@ -293,7 +305,7 @@
 
     const header6 = document.getElementById('toggle-titulo6');
     const content6 = document.getElementById('toggle-contenido6');
-    const arrow6 = document.querySelector('.arrow6');    
+    const arrow6 = document.getElementById('arrow6');    
 
     header6.addEventListener('click', () => {
       content6.classList.toggle('open');
@@ -302,7 +314,7 @@
 
     const header7 = document.getElementById('toggle-titulo7');
     const content7 = document.getElementById('toggle-contenido7');
-    const arrow7 = document.querySelector('.arrow7');    
+    const arrow7 = document.getElementById('arrow7');    
 
     header7.addEventListener('click', () => {
       content7.classList.toggle('open');
