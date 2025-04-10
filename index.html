@@ -16,7 +16,8 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 40px;
-            background-color: #333138;
+            background-image: url('ocean.jpg');            
+/*            background-color: #333138;*/
         }
         header {
             text-align: center;
@@ -78,7 +79,7 @@
           max-height: 0;
           border-radius: 8px;            
           overflow: hidden;
-          transition: max-height 0.5s ease;
+          transition: max-height 1s ease;
           padding: 0 15px;
           background-color: #B5B5E9;
           margin-bottom: 20px;          
@@ -142,7 +143,7 @@
             <article>
                 <div class='titulo'id='toggle-titulo2'>           
                     <h3>Causalidad y responsabilidad moral</h3>
-                    <h3 class="arrow2">▼</h3>
+                    <h3 class="arrow" id="arrow2">▼</h3>
                 </div>
                 <div class="contenido" id="toggle-contenido2">
                 <p>Slurs have provided an interesting challenge to truth/informational/update semantic frameworks. Their political misbehaviour is matched by their resistance to fall cleanly into the semantics and pragmatic categories we spent the 20th and beginning of the 21st centuries developing. They misbehave so badly that it’s difficult even to tell how to characterize the data that needs to be explained (offensiveness? Derogatory content? Some mix of the two). We’ll look at attempts to characterize the category of slur term or pejorative and learn about the categories that theorists have attempted to squeeze slurs into.</p>
@@ -186,7 +187,7 @@
            <article>
                 <div class='titulo'id='toggle-titulo6'>           
                     <h3>Juan</h3>
-                    <h3 class="arrow6">▼</h3>
+                    <h3 class="arrow" id="arrow6">▼</h3>
                 </div>
                 <div class="contenido" id="toggle-contenido6">
                 <p>The best philosophy makes contact with the best available science. This course introduces philosophy students to the study of language as it is pursued by linguists and their allies. In the first session, the central questions and ideas of generative linguistics – the science of language – are introduced. This lecture is framed around three fundamental questions: What is knowledge of language? How is it acquired? And what use is it? We suppose, along with Noam Chomsky, that the evidence from language design suggests optimization for thought, rather than communication. The second session, then, explores the interface between language and conceptualization drawing on representational tools from formal semantics. If time, this session will both (i) introduce cutting-edge results in the psychology of meaning and (ii) present an opinionated guide to theorizing about the Language of Thought.</p>
@@ -197,7 +198,7 @@
            <article>
                 <div class='titulo'id='toggle-titulo7'>           
                     <h3>Gabriel</h3>
-                    <h3 class="arrow7">▼</h3>
+                    <h3 class="arrow" id="arrow7">▼</h3>
                 </div>
                 <div class="contenido" id="toggle-contenido7">
                 <p>The best philosophy makes contact with the best available science. This course introduces philosophy students to the study of language as it is pursued by linguists and their allies. In the first session, the central questions and ideas of generative linguistics – the science of language – are introduced. This lecture is framed around three fundamental questions: What is knowledge of language? How is it acquired? And what use is it? We suppose, along with Noam Chomsky, that the evidence from language design suggests optimization for thought, rather than communication. The second session, then, explores the interface between language and conceptualization drawing on representational tools from formal semantics. If time, this session will both (i) introduce cutting-edge results in the psychology of meaning and (ii) present an opinionated guide to theorizing about the Language of Thought.</p>
@@ -250,7 +251,7 @@
 
     const header2 = document.getElementById('toggle-titulo2');
     const content2 = document.getElementById('toggle-contenido2');
-    const arrow2 = document.querySelector('.arrow2');    
+    const arrow2 = document.getElementById('.arrow2');    
 
     header2.addEventListener('click', () => {
       content2.classList.toggle('open');
@@ -259,7 +260,7 @@
 
     const header3 = document.getElementById('toggle-titulo3');
     const content3 = document.getElementById('toggle-contenido3');
-    const arrow3 = document.querySelector('.arrow3');    
+    const arrow3 = document.getElementById('.arrow3');    
 
     header3.addEventListener('click', () => {
       content3.classList.toggle('open');
