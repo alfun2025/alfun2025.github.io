@@ -28,6 +28,19 @@
             background-size: 200px;
         }
 
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+                padding: 10px;
+            }
+            
+            /* Prevent text from extending beyond screen */
+            * {
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+        }        
+
         header {
             text-align: center;
             margin-bottom: 40px;
