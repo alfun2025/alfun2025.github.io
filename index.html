@@ -39,6 +39,7 @@
                 max-width: 100%;
                 box-sizing: border-box;
             }
+
         }        
 
         header {
@@ -56,6 +57,37 @@
         h1,h2 {
             font-family: 'Inria Sans';
         }
+
+        @media (max-width: 768px) {
+          h1 {
+            font-size: 1.8rem; /* Smaller on mobile */
+          }
+        h2 {
+            font-size: 1.5rem; /* Smaller on mobile */
+          }
+        h3 {
+            font-size: 1.3rem; /* Smaller on mobile */
+          }
+        p {
+            font-size: 1.2rem;
+        }                               
+        }
+
+        @media (max-width: 480px) {
+          h1 {
+            font-size: 1.5rem; /* Even smaller on very small screens */
+          }
+          h2 {
+            font-size: 1.2rem; /* Even smaller on very small screens */
+          } 
+        h3 {
+            font-size: 0.9rem; /* Smaller on mobile */
+          }
+        p {
+            font-size: 0.9rem;
+        }                     
+        }
+
         .container {
             background-color: #FEEACA;
             border: 7.5px outset black; 
@@ -119,7 +151,7 @@
         }
         
         .contenido.open {
-          max-height: 500px;
+          max-height: 100%;
           padding: 15px;
         }
         
@@ -138,10 +170,19 @@
         }
 
         table {
+            min-width: 600px; /* or whatever minimum width you need */
             width: 100%;
             border-collapse: collapse;
             margin: 0 auto;
             border: 1px solid #293132;
+            overflow-x: auto;
+            display: block;
+            white-space: nowrap;            
+        }
+
+        .table-wrapper {
+            overflow-x: scroll;
+            -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
         }
         
         th, td {
@@ -155,7 +196,7 @@
             background-color: #BC4B51;
 
             font-weight: bold;
-        }        
+        }                
 
 
     </style>
@@ -277,6 +318,8 @@
 
         <section>
             <h1>Calendario de clases magistrales</h1>
+            <p><i>Desliza a la derecha para ver más</i></p>
+            <div class="table-wrapper">
             <table>
                 <thead>
                     <tr>
@@ -314,7 +357,8 @@
                         <td class="class-cell">Comunicación no-ideal</td>
                     </tr>
                 </tbody>
-            </table>         
+            </table>
+            </div>         
         </section>        
 
         <section id="charlas">
