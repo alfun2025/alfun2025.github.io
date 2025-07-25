@@ -37,13 +37,14 @@
             footer{
                 font-size:14px;
                 padding: 10px;
-            }
+            }           
             
             /* Prevent text from extending beyond screen */
             * {
                 max-width: 100%;
                 box-sizing: border-box;
             }
+
 
         }        
 
@@ -75,6 +76,10 @@
 
         h1,h2 {
             font-family: 'Inria Sans';
+        }
+
+        p{
+            color: #293132;
         }
 
         @media (max-width: 768px) {
@@ -188,6 +193,10 @@
                   transform: rotate(180deg);
         }
 
+        .logo{
+            width: 200px !important;
+        }
+
         table {
             min-width: 600px; /* or whatever minimum width you need */
             width: 100%;
@@ -215,7 +224,34 @@
             background-color: #BC4B51;
 
             font-weight: bold;
-        }                
+        }      
+
+        .logo-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 40px;
+            row-gap: 20px;
+        }
+
+        .logo-item {
+            flex: 0 0 200px; /* Fixed width items */
+        }  
+
+       @media (max-width: 768px) {
+
+            .logo-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .logo-item {
+                flex: 0 0 160px; /* Fixed width items */
+            }              
+
+        }                          
 
 
     </style>
@@ -470,18 +506,34 @@
 <footer>
     <div class="container3">
     <div class="container2">    
-    <section id="auspiciadores">
-    <h3><b>Auspiciado por:</b></h3>
-    <p style="text-align: center;">
-    <img src="logos/uarm.png" alt="logo UARM" style="width: 200px; Padding: 20px;">
-    <img src="logos/unmsm.png" alt="logo UARM" style="width: 200px;Padding: 20px;padding-bottom: 30px;">
-    <img src="logos/theorema.png" alt="logo UARM" style="width: 200px;padding-bottom: 20px;">        
-    <img src="logos/apa.png" alt="logo UARM" style="width: 200px;Padding: 20px;">
-    <img src="logos/pucp.png" alt="logo UARM" style="width: 200px;Padding: 20px;">
-    <img src="logos/humanidades.png" alt="logo UARM" style="width: 150px; Padding: 20px;">
-    <img src="logos/facultadllcch.png" alt="logo UARM" style="width: 150px; Padding: 20px; padding-bottom: 40px;">        
-    <img src="logos/cef.png" alt="logo UARM" style="width: 200px; Padding: 20px;">        
-    </p>            
+    <section>
+            <h3><b>Auspiciado por:</b></h3>
+        <div class="logo-container">
+            <div class="logo-item">
+                <img src="logos/alfan.png" alt="logo UARM" class="logo">
+            </div>
+            <div class="logo-item">
+                <img src="logos/apa.png" alt="logo APA" class="logo">
+            </div>            
+            <div class="logo-item">
+                <img class="logo" src="logos/uarm.png" alt="logo UARM" class="logo">
+            </div>
+            <div class="logo-item">
+                <img src="logos/unmsm.png" alt="logo UARM" class="logo">
+            </div>
+            <div class="logo-item">
+                <img src="logos/pucp.png" alt="logo UARM" class="logo">
+            </div>
+            <div class="logo-item">
+                <img src="logos/humanidades.png" alt="logo UARM" class="logo">
+            </div>                         
+            <div class="logo-item">
+                <img src="logos/facultadllcch.png" alt="logo UARM" class="logo">
+            </div>                           
+            <div class="logo-item">
+                <img src="logos/cef.png" alt="logo UARM" class="logo">
+            </div>                                                                                    
+        </div>
     </section>
 </div>
 </div>
