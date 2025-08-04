@@ -97,6 +97,10 @@
         }                               
         }
 
+        h4{
+            font-weight: normal;
+        }
+
         @media (max-width: 480px) {
           h1 {
             font-size: 1.5rem; /* Even smaller on very small screens */
@@ -209,6 +213,7 @@
             white-space: nowrap;            
         }
 
+
         .table-wrapper {
             overflow-x: scroll;
             -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
@@ -225,7 +230,14 @@
             background-color: #BC4B51;
             color:#1e2324;
             font-weight: bold;
-        }      
+        } 
+
+        .tabla-invisible{
+                        border: 0px;
+                        text-align: left;
+                        border-collapse: collapse;
+                        border-color: #FEEACA;
+        }             
 
         .logo-container {
             display: flex;
@@ -433,12 +445,46 @@
         <section id="charlas">
             <h2>Charlas avanzadas (9 de agosto)</h2>
             <article>
-                <h4>Martín Abreu Zavaleta - <i>Only wholes, but also their parts</i> </h3>
-                <h4>Jaime Castillo Gamboa - <i>A theory of determinacy operators</i> </h3>
-                <h4>Juan Comesaña - <i>Good and false evidence</i> </h4>                    
-                <h4>Dmitri Gallow - <i>Structured deliberation</i> </h3>
-                <h4>Gabriel Uzquiano - <i>A framework for location</i></h3>
+<!--     <table class="tabla-invisible">
+        <tbody class="tabla-invisible">
+            <tr >
+                <td class="time-column">10:00 AM - 11:15 AM</td>
+                <td >Dmitri Gallow</td>
+                <td >Structured deliberation</td>
+            </tr>
+            <tr class="tabla-invisible">
+                <td >11:30 AM - 12:45 PM</td>
+                <td >Jaime Castillo Gamboa</td>
+                <td >A theory of determinacy operators</td>
+            </tr>
+            <tr class="tabla-invisible">
+                <td colspan="3" class="break">Break para almorzar</td>
+            </tr>
+            <tr class="tabla-invisible">
+                <td >2:00 PM - 3:15 PM</td>
+                <td >Martín Abreu Zavaleta</td>
+                <td >Only wholes, but also their parts</td>
+            </tr>
+            <tr class="tabla-invisible">
+                <td >3:30 PM - 4:45 PM</td>
+                <td >Gabriel Uzquiano</td>
+                <td >A framework for location</td>
+            </tr>
+            <tr class="tabla-invisible">
+                <td >5:00 PM - 6:15 PM</td>
+                <td >Juan Comesaña</td>
+                <td >Good and false evidence</td>
+            </tr>
+        </tbody>
+    </table> -->
 
+
+                <h4><b>10AM-11:15AM</b> Dmitri Gallow - <i>Structured deliberation</i> </h4>
+                <h4><b>11:30AM-12:45PM</b> Jaime Castillo Gamboa - <i>A theory of determinacy operators</i> </h4>
+                <p><b>Break para almorzar</b></p>
+                <h4><b>2PM-3:15PM</b> Martín Abreu Zavaleta - <i>Only wholes, but also their parts</i> </h4>
+                <h4><b>3:30PM-4:45PM</b> Gabriel Uzquiano - <i>A framework for location</i></h4>
+                <h4><b>5PM-6:15PM</b> Juan Comesaña - <i>Good and false evidence</i> </h4>
 
             </article>
             <p>Las charlas avanzadas se llevarán a cabo en el Auditorio de Letras y Ciencias Humanas de la UNMSM.</p>
